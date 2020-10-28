@@ -1,0 +1,18 @@
+{% extends "basic.html" %}
+
+{% block body %}
+  
+<div class="typewriter">
+  <div class="typewriter-text" >Welcome to Covid-19 Tracker!!</div>
+</div>
+
+<div class="container">
+<p class="typewriter-text" style="font-size:35px;">Total Cases: {{TotalConfirmed}}</p>  </div>
+
+<div class="container">
+<p class="typewriter-text" style="font-size:35px; color:red">Deaths: {{TotalDeaths}}</p> </div>
+
+
+<div class="container">
+  <p class="typewriter-text" style="font-size:35px;color: darkgreen;">Recovered: {{TotalRecovered}}</p></div>
+{% endblock body %}

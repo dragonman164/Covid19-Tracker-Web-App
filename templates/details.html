@@ -1,0 +1,41 @@
+{% extends "basic.html" %}
+{% block body %}
+
+<div class="container">
+<img src = "http://www.geognos.com/api/en/countries/flag/{{Country.CountryCode}}.png" style="width:320px;height:210px; padding-top: 100px;padding-left: 100px;">
+<h1 style="text-align: center;">{{Country.Country}}</h1></div>
+
+<table class="table table-dark" style="table-layout:fixed; border: 50px solid white;border-collapse: collapse;">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Total Confirmed</th>
+        <td>{{Country.TotalConfirmed}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Total Deaths</th>
+        <td>{{Country.TotalDeaths}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Total Recovered</th>
+        <td>{{Country.TotalRecovered}}</td>
+      </tr>
+      <tr>
+        <th scope="row">New Cases</th>
+        <td>{{Country.NewConfirmed}}</td>
+      </tr>
+      <tr>
+        <th scope="row">New Deaths</th>
+        <td>{{Country.NewDeaths}}</td>
+      </tr>
+      <tr>
+        <th scope="row">New Recovered</th>
+        <td>{{Country.NewRecovered}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock body %}
+
